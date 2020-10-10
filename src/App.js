@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar.js';
 import Contact from './components/Contact.js';
 import Typewriter from 'typewriter-effect';
-import Modal from 'react-modal';
+import { FaAngleDown } from 'react-icons/fa'; 
+
 
 const strings = ['code.', 'creating.', 'learning.', 'technology.'];
 function App() {
@@ -13,7 +14,7 @@ function App() {
 		<Navbar/>
 		<Contact/>
 
-		<div id='home'>
+		<section id='home'>
 			<div className='name'>
 				<h4>Hi, my name is</h4>
 
@@ -34,12 +35,16 @@ function App() {
 				/>
 			</div>
 
-		</div>
+			<div class='arrow'>
+				<h3><a href='#about'><FaAngleDown color='black'/></a></h3>
+			</div>
+
+		</section>
 
 
 
 
-		<div id='about'>
+		<section id='about'>
 			<h1 className='about-header'>
 				About
 			</h1><br></br>
@@ -73,29 +78,24 @@ function App() {
 			<p>Bootstrap (Proficient) </p>
 			<p>React.js (Learning)</p>
 
-		</div>
+		</section>
 
 
-		<div>
-
-		</div>
-
-
-		<div id='projects'>
+		<section id='projects'>
 				<h1 className='projects-header'
 				>Projects</h1><br></br><br></br>
-
 				<div className='app'>
 					<a href='https://bloggyapp.pythonanywhere.com' target='__blank'><img 
 																					src='/img/bloggy.jpg'
 																					alt='Bloggy'
 																					width='290'
-
 																					height='210'
 																					/></a>
-					<h4>Bloggy</h4><br></br>				
+					<h4>Bloggy</h4><br></br>
+					<p>Python/Flask/SQLite</p>
 				</div><br></br>
-				
+			
+
 
 				<div className='app'>
 					<a href='https://todosapp.pythonanywhere.com' target='__blank'><img 
@@ -106,6 +106,7 @@ function App() {
 
 																					/></a>
 					<h4>Todo-List-App</h4><br></br>
+					<p>Python/Flask/SQLite</p>
 				</div><br></br>
 
 				<div className='app'>
@@ -116,6 +117,7 @@ function App() {
 																					height='210'
 																					/></a>
 					<h4>Games</h4><br></br>
+					<p>Python/PyGame/Turtle</p>
 				</div><br></br>
 
 				<div className='app'>
@@ -126,6 +128,7 @@ function App() {
 																					height='210'
 																					/></a>
 					<h4>Password Generator</h4><br></br>
+					<p>JavaScript/HTML/CSS</p>
 				</div><br></br>
 
 				<div className='app'>
@@ -136,9 +139,10 @@ function App() {
 																					height='210'
 																					/></a>
 					<h4>Air Quality Monitor</h4><br></br>
-				</div>
-		</div>
-
+					<p>Python/Tkinter</p>
+				</div><br></br>
+				
+		</section>
 
 
     </div>
