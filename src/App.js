@@ -77,6 +77,7 @@ function App() {
 			<p>Tkinter (Proficient) </p>
 			<p>Bootstrap (Proficient) </p>
 			<p>React.js (Learning)</p>
+			<p>Flutter (Learning)</p>
 
 		</section>
 
