@@ -216,6 +216,18 @@ html {
     padding-left: 70px;
     padding-right: 30px;
   }
+
+
+  #projects .app {
+    border: .3px solid black;
+    border-radius: 10px;
+    margin: auto;
+    padding: 3%;
+    width: 280px;
+
+  }
+
+
 }
 
 @media screen and (max-width: 280px) {
