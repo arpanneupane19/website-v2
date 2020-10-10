@@ -1,38 +1,253 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  background: rgb(44, 44, 44);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar .logo{
+  margin-left: 30px;
+  margin-top: 25px; 
+  float: left;
+}
+
+.navbar .logo a{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar ul{
+  float: right;
+  padding-top: 25px;
+  margin-right: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar ul li{
+  display: inline;
+  padding: 20px;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li a:hover {
+  background-color: rgb(94, 94, 94);
+
+}
+
+.sidebar-icons {
+  position: fixed;
+  padding-top: 350px;
+  padding-left: 20px;
+  float: left;
+  size: 10px;
+}
+
+#home {
+  padding-top: 150px;
+  height: 1200px;
+  background-image: url('./img/bg1.jpg');
+  background-repeat: no-repeat;
+}
+
+.name {
+  float: left;
+  padding-left: 250px;
+}
+
+.typewrite {
+  float: left;
+  padding-left: 250px;
+  margin-top: 50px;
+
+}
+
+#about {
+  height: 1100px;
+  padding-top: 150px;
+  text-align: left;
+  padding-left: 150px;
+
+}
+
+#about a{
+  color: #0275d8;
+}
+
+
+#projects {
+  height: 1350px;
+  padding-top: 150px;
+  text-align: center;
+  background-image: url('./img/bg4.jpg');
+  background-repeat: no-repeat;
+}
+
+
+
+#projects .app {
+  border: .3px solid black;
+  border-radius: 10px;
+  margin: auto;
+  padding: 3%;
+  width: 300px;
+
+}
+
+
+@media screen and (max-width: 856px) {
+  .navbar ul li{
+    display: inline;
+    padding: 10px;
+
   }
-  to {
-    transform: rotate(360deg);
+
+
+  .navbar .logo {
+    color: white;
+    margin-left: 20px;
+    margin-top: 25px; 
+    float: left;
+
+  }
+
+  .name {
+    padding-left: 70px;
+  }
+
+  .typewrite{
+    padding-left: 70px;
+    padding-right: 10px;
+
+  }
+
+  #about {
+    padding-left: 70px;
+    padding-right: 20px;
+  }
+
+
+
+  
+}
+
+
+@media screen and (max-width: 375px) {
+  .navbar ul li{
+    display: inline;
+    padding: 10px;
+    font-size: smaller;
+
+  }
+
+
+  .navbar .logo {
+    color: white;
+    margin-left: 20px;
+    margin-top: 28px; 
+    float: left;
+    font-size: smaller;
+
+  }
+
+  .name {
+    padding-left: 70px;
+  }
+
+  .typewrite{
+    padding-left: 70px;
+    padding-right: 15px;
+
+  }
+
+  #about {
+    padding-left: 70px;
+    padding-right: 30px;
+  }
+
+}
+
+@media screen and (max-width: 351px) {
+  .navbar ul li{
+    display: inline;
+    padding: 10px;
+    font-size: small;
+
+  }
+
+
+  .navbar .logo {
+    color: white;
+    margin-left: 20px;
+    margin-top: 28px; 
+    float: left;
+    font-size: small;
+
+  }
+
+  .name {
+    padding-left: 70px;
+  }
+
+  .typewrite{
+    padding-left: 70px;
+    padding-right: 15px;
+
+  }
+
+  #about {
+    padding-left: 70px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .navbar ul li{
+    display: inline;
+    padding: 10px;
+    font-size: x-small;
+
+  }
+
+
+  .navbar .logo {
+    color: white;
+    margin-left: 20px;
+    margin-top: 32px; 
+    float: left;
+    font-size: x-small;
+
+  }
+
+  .name {
+    padding-left: 70px;
+  }
+
+  .typewrite{
+    padding-left: 70px;
+    padding-right: 15px;
+
+  }
+
+  #about {
+    padding-left: 70px;
+    padding-right: 30px;
   }
 }
