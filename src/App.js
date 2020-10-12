@@ -110,6 +110,22 @@ function App() {
 					<p>Python/Flask/SQLite</p>
 				</div><br></br>
 
+
+				<div className='app'>
+					<a href='#projects'><img 
+																					src='/img/website.jpg'
+																					alt='This website'
+																					width='290'
+																					height='210'
+																					/></a>
+					<h4>This website</h4><br></br>
+					<p>React.js</p>
+				</div><br></br>
+
+
+
+
+
 				<div className='app'>
 					<a href='https://arpanneupane.itch.io/' target='__blank'><img 
 																					src='/img/games.jpg'
@@ -133,7 +149,7 @@ function App() {
 				</div><br></br>
 
 				<div className='app'>
-					<a href='https://passwordgenarpan.netlify.app/' target='__blank'><img 
+					<a href='https://airqualitymonitor.netlify.app/' target='__blank'><img 
 																					src='/img/airqm.jpg'
 																					alt='Air Quality Monitor'
 																					width='290'
