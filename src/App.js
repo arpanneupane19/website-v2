@@ -6,11 +6,14 @@ import Typewriter from 'typewriter-effect';
 import { FaAngleDown } from 'react-icons/fa'; 
 
 
+
 const strings = ['code.', 'creating.', 'learning.', 'technology.'];
+
 function App() {
 
   return (
-    <div className="App">
+
+    <div className="app">
 		<Navbar/>
 		<Contact/>
 
@@ -83,82 +86,61 @@ function App() {
 
 
 		<section id='projects'>
-				<h1 className='projects-header'
-				>Projects</h1><br></br><br></br>
-				<div className='app'>
-					<a href='https://bloggyapp.pythonanywhere.com' target='__blank'><img 
-																					src='/img/bloggy.jpg'
-																					alt='Bloggy'
-																					width='290'
-																					height='210'
-																					/></a>
-					<h4>Bloggy</h4><br></br>
-					<p>Python/Flask/SQLite</p>
-				</div><br></br>
-			
+			<h1 className='projects-header'>Projects</h1>
 
+			<div className='all-projects'>
 
 				<div className='app'>
-					<a href='https://todosapp.pythonanywhere.com' target='__blank'><img 
-																					src='/img/todo.jpg'
-																					alt='Todo-List-App'
-																					width='290'
-																					height='210'
 
-																					/></a>
-					<h4>Todo-List-App</h4><br></br>
-					<p>Python/Flask/SQLite</p>
-				</div><br></br>
+					<a href='https://bloggyapp.pythonanywhere.com' target='__blank'><img src='/img/bloggy.jpg' alt='Bloggy'/></a>
+					<h4>Bloggy</h4>
+					<p>Python/Flask/SQLite</p><br></br>
+
+
+				</div>
 
 
 				<div className='app'>
-					<a href='#projects'><img 
-																					src='/img/website.jpg'
-																					alt='This website'
-																					width='290'
-																					height='210'
-																					/></a>
-					<h4>This website</h4><br></br>
-					<p>React.js</p>
-				</div><br></br>
-
-
+					<a href='https://todosapp.pythonanywhere.com' target='__blank'><img src='/img/todo.jpg' alt='Todo-List-App'/></a>
+					<h4>Todo-List-App</h4>
+					<p>Python/Flask/SQLite</p><br></br>
+				</div> 
 
 
 
 				<div className='app'>
-					<a href='https://arpanneupane.itch.io/' target='__blank'><img 
-																					src='/img/games.jpg'
-																					alt='Games'
-																					width='290'
-																					height='210'
-																					/></a>
-					<h4>Games</h4><br></br>
-					<p>Python/PyGame/Turtle</p>
-				</div><br></br>
+					<a href='#projects'><img src='/img/website.jpg' alt='This Website'/></a>
+					<h4>This Website</h4>
+					<p>React.js</p><br></br>
+				</div> 
+
+
 
 				<div className='app'>
-					<a href='https://passwordgenarpan.netlify.app/' target='__blank'><img 
-																					src='/img/passwordgen.jpg'
-																					alt='Password Generator'
-																					width='290'
-																					height='210'
-																					/></a>
-					<h4>Password Generator</h4><br></br>
-					<p>JavaScript/HTML/CSS</p>
-				</div><br></br>
+					<a href='https://arpanneupane.itch.io/' target='__blank'><img src='/img/games.jpg' alt='Games'/></a>
+					<h4>Games</h4>
+					<p>Python/PyGame/Turtle</p><br></br>
+				</div> 
+
 
 				<div className='app'>
-					<a href='https://airqualitymonitor.netlify.app/' target='__blank'><img 
-																					src='/img/airqm.jpg'
-																					alt='Air Quality Monitor'
-																					width='290'
-																					height='210'
-																					/></a>
-					<h4>Air Quality Monitor</h4><br></br>
-					<p>Python/Tkinter</p>
-				</div><br></br>
-				
+					<a href='https://passwordgenarpan.netlify.app/' target='__blank'><img src='/img/passwordgen.jpg' alt='Password Generator'/></a>
+					<h4>Password Generator</h4>
+					<p>JavaScript/HTML/CSS</p><br></br>
+				</div> 
+
+
+				<div className='app'>
+					<a href='https://airqualitymonitor.netlify.app/' target='__blank'><img src='/img/airqm.jpg' alt='Air Quality Monitor'/></a>
+					<h4>Air Quality Monitor</h4>
+					<p>Python/Tkinter</p><br></br>
+				</div> 
+
+
+
+
+			</div>
+
 		</section>
 
 
