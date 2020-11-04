@@ -28,7 +28,7 @@ function App() {
 			</div><br></br><br></br><br></br><br></br>
 
 			<div className='typewrite'>
-				<h4>I am a 12 year old programmer with interest in</h4>
+				<h4>I am a 13 year old programmer with interest in</h4>
 				<Typewriter
 					options={{
 						strings,
@@ -52,7 +52,7 @@ function App() {
 				About
 			</h1><br></br>
 			<p>
-				Hello there! My name is Arpan Neupane and I am a 12 year old programmer.<br></br>
+				Hello there! My name is Arpan Neupane and I am a 13 year old programmer.<br></br>
 				My interests are in web development, and I mainly use Python as my backend.<br></br>
 				I also have created games using Python's Pygame library and GUI applications with Tkinter.<br></br>
 				I enjoy creating apps that can help people, make every day life easier, and make it fun.<br></br>
