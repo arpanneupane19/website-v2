@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,51 +13,61 @@ html {
   text-decoration: none;
 }
 
-.navbar {
+a {
+  cursor: pointer;
+}
+
+.nav-bar {
   height: 70px;
   width: 100%;
   position: fixed;
   background: rgb(44, 44, 44);
+  z-index: 100;
 
 }
 
-.navbar .logo{
+.nav-bar .logo{
   margin-left: 30px;
   margin-top: 25px; 
   float: left;
 }
 
-.navbar .logo a{
+.nav-bar .logo a{
   color: white;
 }
 
-.navbar ul{
+.nav-bar ul{
   float: right;
   padding-top: 25px;
   margin-right: 10px;
 
 }
 
-.navbar ul li{
+.nav-bar ul li{
   display: inline;
   padding: 20px;
 }
 
-.navbar ul li a{
+.nav-bar ul li a{
   text-decoration: none;
   color: white;
 }
 
-.navbar ul li a:hover {
+.nav-bar ul li a:hover {
   background-color: rgb(94, 94, 94);
 
 }
 
 .sidebar-icons {
   position: fixed;
-  padding-top: 350px;
+  margin-top: 300px;
   padding-left: 20px;
-  float: left;
+
+}
+
+.icons {
+  font-size: 25px;
+
 }
 
 #home {
@@ -113,6 +124,8 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 900px;
+  margin: auto;
 }
 
 #projects .app {
@@ -131,14 +144,14 @@ html {
 
 
 @media screen and (max-width: 856px) {
-  .navbar ul li{
+  .nav-bar ul li{
     display: inline;
     padding: 10px;
 
   }
 
 
-  .navbar .logo {
+  .nav-bar .logo {
     color: white;
     margin-left: 20px;
     margin-top: 25px; 
@@ -170,7 +183,7 @@ html {
 
 
 @media screen and (max-width: 375px) {
-  .navbar ul li{
+  .nav-bar ul li{
     display: inline;
     padding: 10px;
     font-size: smaller;
@@ -178,7 +191,7 @@ html {
   }
 
 
-  .navbar .logo {
+  .nav-bar .logo {
     color: white;
     margin-left: 20px;
     margin-top: 28px; 
@@ -207,7 +220,7 @@ html {
 }
 
 @media screen and (max-width: 351px) {
-  .navbar ul li{
+  .nav-bar ul li{
     display: inline;
     padding: 10px;
     font-size: small;
@@ -215,7 +228,7 @@ html {
   }
 
 
-  .navbar .logo {
+  .nav-bar .logo {
     color: white;
     margin-left: 20px;
     margin-top: 28px; 
@@ -259,13 +272,13 @@ html {
 
 
 @media screen and (max-width: 540px) {
-  .navbar ul li{
+  .nav-bar ul li{
     display: inline;
     padding: 10px;
   }
 
 
-  .navbar .logo {
+  .nav-bar .logo {
     color: white;
     margin-left: 20px;
     margin-top: 26px; 
@@ -290,7 +303,7 @@ html {
 }
 
 @media screen and (max-width: 280px) {
-  .navbar ul li{
+  .nav-bar ul li{
     display: inline;
     padding: 10px;
     font-size: x-small;
@@ -298,7 +311,7 @@ html {
   }
 
 
-  .navbar .logo {
+  .nav-bar .logo {
     color: white;
     margin-left: 20px;
     margin-top: 32px; 

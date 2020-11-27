@@ -1,0 +1,40 @@
+.modal-container {
+	width: 300px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 3px;
+	transition: all 1.3s;
+	background: white;
+	justify-content: center;
+	transition: 1.3s;
+
+}
+
+.modal-header {
+	display: flex;
+}
+
+.modal-header > button {
+	margin-left: 280px;
+}
+
+.close-modal-btn {
+	cursor: pointer;
+	background: none;
+	border: none;
+	padding: 2px;
+}
+
+.modal-container > hr {
+	height: 1px;
+	border: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: rgb(58, 58, 58);
+}
+
+.modal-content > p {
+	font-size: smaller;
+}
+
