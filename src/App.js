@@ -4,15 +4,22 @@ import Navbar from './components/Navbar.js';
 import Contact from './components/Contact.js';
 import Typewriter from 'typewriter-effect';
 import { FaAngleDown } from 'react-icons/fa'; 
-import Modal from './components/Modal.js';
+import {BloggyModal, TodosModal} from './components/Modal.js';
 
 
 const strings = ['code.', 'creating.', 'learning.', 'technology.'];
 
 function App() {
-	const [show, setShow] = useState(false);
-	const closeModalHandler = () => setShow(false);
 	
+	// Bloggy hooks
+	const [showBloggy, setShowBloggy] = useState(false);
+	const closeBloggy = () => setShowBloggy(false);
+
+	// Todos hooks
+	const [showTodos, setShowTodos] = useState(false);
+	const closeTodos = () => setShowTodos(false);
+
+
 	return (
 
 		<div className="app">
@@ -34,7 +41,7 @@ function App() {
 								<h4>I am a 13 year old programmer with interest in</h4>
 								<Typewriter
 										options={{
-												strings,
+												strings: strings,
 												autoStart: true,
 												loop: true,
 										}}
@@ -93,19 +100,25 @@ function App() {
 						<div className='all-projects'>
 
 								<div className='app'>
-
-										<a href='https://bloggyapp.pythonanywhere.com' target='__blank'><img src='/img/bloggy.jpg' alt='Bloggy'/></a>
+										<a onClick={() => setShowBloggy(true)}><img src='/img/bloggy.jpg' alt='Bloggy'/></a>
 										<h4>Bloggy</h4>
 										<p>Python/Flask/SQLite</p><br></br>
+										<BloggyModal
+										showBloggy={showBloggy}
+										closeBloggy={closeBloggy}
+										/>		
+
 								</div>
 
 
-
-
 								<div className='app'>
-										<a href='https://todosapp.pythonanywhere.com' target='__blank'><img src='/img/todo.jpg' alt='Todo-List-App'/></a>
+										<a onClick={() => setShowTodos(true)}><img src='/img/todo.jpg' alt='Todo-List-App'/></a>
 										<h4>Todo-List-App</h4>
 										<p>Python/Flask/SQLite</p><br></br>
+										<TodosModal
+										showTodos={showTodos}
+										closeTodos={closeTodos}
+										/>
 								</div> 
 
 
@@ -144,6 +157,8 @@ function App() {
 
 						</div>
 
+				
+
 				</section>
 
 
@@ -153,5 +168,6 @@ function App() {
 		
 	);
 }
+
 
 export default App;

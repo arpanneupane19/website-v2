@@ -128,16 +128,18 @@ a {
   margin: auto;
 }
 
+
 #projects .app {
   border: 1px solid black;
   border-radius: 10px;
-  padding: 0.5%;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
 
 }
 
 #projects .app > a > img {
   height: 250px;
+
   object-fit: contain;
 }
 
