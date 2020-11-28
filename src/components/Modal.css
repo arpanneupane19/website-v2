@@ -1,18 +1,27 @@
 .modal-container {
-	width: 300px;
-	height: 120px;
-	padding: 5px;
-	border: 1px solid black;
-	border-radius: 3px;
-	margin-left: 10px;
+	width: 400px;
+	padding: 15px;
+    border: 1px solid lightgray;
+    box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+    margin-left: 10px;
+	background-color: white;
+    z-index: 500;
+    top: 50%;
+    left: 34%;
+    transition: .3s ease-out;
+    position: fixed;
+    
 }
+
 
 .modal-header {
 	display: flex;
 }
 
 .modal-header > span {
-	margin-left: 230px;
+    margin-left: 385px;
+    position: fixed;
 
 }
 
@@ -31,7 +40,11 @@
 	background-color: rgb(58, 58, 58);
 }
 
-.modal-content > p {
-	font-size: smaller;
+.modal-content > p > a {
+    color: #0275d8;
 }
 
+.modal-links {
+    display: flex;
+    flex-direction: column;
+}

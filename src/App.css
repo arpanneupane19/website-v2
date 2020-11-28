@@ -22,7 +22,7 @@ a {
   width: 100%;
   position: fixed;
   background: rgb(44, 44, 44);
-  z-index: 100;
+  z-index: infinte;
 
 }
 
@@ -134,12 +134,14 @@ a {
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+  overflow: visible;
 
 }
 
-#projects .app > a > img {
+#projects .app >  img {
   height: 250px;
-
+  z-index: 100;
+  cursor: pointer;
   object-fit: contain;
 }
 

@@ -97,34 +97,28 @@ function App() {
 
 				<section id='projects'>
 						<h1 className='projects-header'>Projects</h1>
+
 						<div className='all-projects'>
 
 								<div className='app'>
-										<a onClick={() => setShowBloggy(true)}><img src='/img/bloggy.jpg' alt='Bloggy'/></a>
+										<img onClick={() => setShowBloggy(true)} src='/img/bloggy.jpg' alt='Bloggy'/>
 										<h4>Bloggy</h4>
 										<p>Python/Flask/SQLite</p><br></br>
-										<BloggyModal
-										showBloggy={showBloggy}
-										closeBloggy={closeBloggy}
-										/>		
 
 								</div>
 
 
 								<div className='app'>
-										<a onClick={() => setShowTodos(true)}><img src='/img/todo.jpg' alt='Todo-List-App'/></a>
+										<img onClick={() => setShowTodos(true)} src='/img/todo.jpg' alt='Todo-List-App'/>
 										<h4>Todo-List-App</h4>
 										<p>Python/Flask/SQLite</p><br></br>
-										<TodosModal
-										showTodos={showTodos}
-										closeTodos={closeTodos}
-										/>
+
 								</div> 
 
 
 
 								<div className='app'>
-										<a href=''><img src='/img/website.jpg' alt='This Website'/></a>
+										<img src='/img/website.jpg' alt='This Website'/>
 										<h4>This Website</h4>
 										<p>React.js</p><br></br>
 								</div> 
@@ -133,21 +127,21 @@ function App() {
 
 
 								<div className='app'>
-										<a href='https://arpanneupane.itch.io/' target='__blank'><img src='/img/games.jpg' alt='Games'/></a>
+										<img src='/img/games.jpg' alt='Games'/>
 										<h4>Games</h4>
 										<p>Python/PyGame/Turtle</p><br></br>
 								</div> 
 
 
 								<div className='app'>
-										<a href='https://passwordgenarpan.netlify.app/' target='__blank'><img src='/img/passwordgen.jpg' alt='Password Generator'/></a>
+										<img src='/img/passwordgen.jpg' alt='Password Generator'/>
 										<h4>Password Generator</h4>
 										<p>JavaScript/HTML/CSS</p><br></br>
 								</div> 
 
 
 								<div className='app'>
-										<a href='https://airqualitymonitor.netlify.app/' target='__blank'><img src='/img/airqm.jpg' alt='Air Quality Monitor'/></a>
+										<img src='/img/airqm.jpg' alt='Air Quality Monitor'/>
 										<h4>Air Quality Monitor</h4>
 										<p>Python/Tkinter</p><br></br>
 								</div> 
@@ -158,7 +152,14 @@ function App() {
 						</div>
 
 				
-
+						<BloggyModal
+							showBloggy={showBloggy}
+							closeBloggy={closeBloggy}
+						/>
+						<TodosModal
+							showTodos={showTodos}
+							closeTodos={closeTodos}
+						/>
 				</section>
 
 
