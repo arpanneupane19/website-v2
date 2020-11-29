@@ -70,33 +70,6 @@
     
 }
 
-/* @media screen and (max-width: 500px) {
-    .modal-container {
-        width: 100%;
-        padding: 15px;
-        border: 1px solid lightgray;
-        box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        margin-left: 10px;
-        background-color: white;
-        z-index: 500;
-        top: 30%;
-        left: 4%;
-        margin: auto;
-        transition: .3s ease-out;
-        position: fixed;
-    
-    }
-
-    .modal-header > span {
-        margin-left: 295px;
-        position: fixed;
-    
-    }
-    
-  
-    
-} */
 
 @media screen and (max-width: 600px) {
     .modal-container {
