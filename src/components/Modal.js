@@ -95,3 +95,65 @@ export function WebsiteModal ({showSite, closeSite}) {
 	)
 
 }
+
+export function GamesModal ({showGames, closeGames}) {
+	return (
+		<div className='modal-container'
+			style={{
+				transform: showGames ? 'translateY(0vh)' : 'translateY(-100vh)',
+				visibility: showGames ? 'visible' : 'hidden',
+				opacity: showGames ? 1: 0
+				
+			}}
+		>
+			<div className='modal-header'>
+				<h4>Games</h4>
+				<span onClick={closeGames} className='close-modal-btn'>x</span>
+			</div>
+			<hr></hr>
+			<div class='modal-content'>
+				<p>
+					These are my games! I have created 7 games so far and they are all available on both
+					Windows and macOS. I originally started learning Python by creating games.
+					6 of these games were created using the Pygame library, and the Snake game was made
+					with the built in Turtle module in Python.
+					You can check my games out <a href="https://arpanneupane.itch.io/" target="__blank">here! </a>
+					GitHub repositories are <a href="https://github.com/arpanneupane19?tab=repositories" target="__blank">here</a> for some of the games.
+				</p>
+			</div>
+
+		</div>
+
+	)
+}
+
+export function PWGenModal ({showPWGen, closePWGen}) {
+	return (
+		<div className='modal-container'
+			style={{
+				transform: showPWGen ? 'translateY(0vh)' : 'translateY(-100vh)',
+				visibility: showPWGen ? 'visible' : 'hidden',
+				opacity: showPWGen ? 1: 0
+				
+			}}
+		>
+			<div className='modal-header'>
+				<h4>Password Generator</h4>
+				<span onClick={closePWGen} className='close-modal-btn'>x</span>
+			</div>
+			<hr></hr>
+			<div class='modal-content'>
+				<p>
+					
+					This is a Password Generator created using <a href="https://www.javascript.com/">JavaScript</a>.
+					You can click a button and it will randomly generate a secure password and you can click the copy button to copy the password.
+					The GitHub repository is <a href="https://github.com/arpanneupane19/passwordgenerator" target="__blank">here!</a><br></br>
+					The live demo is <a href="https://passwordgenarpan.netlify.app" target="__blank">here!</a>
+
+				</p>
+			</div>
+
+		</div>
+
+	)
+}

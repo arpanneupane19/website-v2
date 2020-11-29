@@ -66,8 +66,12 @@ a {
 }
 
 .icons {
-  font-size: 25px;
+  font-size: 26px;
+}
 
+.icons > li > a:hover{
+  font-size: 30px;
+  transition: .3s;
 }
 
 #home {
@@ -145,6 +149,10 @@ a {
   object-fit: contain;
 }
 
+.ending {
+  text-align: center;
+  margin-top: 20px;
+}
 
 
 @media screen and (max-width: 856px) {

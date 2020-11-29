@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.js';
 import Contact from './components/Contact.js';
 import Typewriter from 'typewriter-effect';
 import { FaAngleDown } from 'react-icons/fa'; 
-import {BloggyModal, TodosModal, WebsiteModal} from './components/Modal.js';
+import {BloggyModal, TodosModal, WebsiteModal, GamesModal, PWGenModal} from './components/Modal.js';
 
 
 const strings = ['code.', 'creating.', 'learning.', 'technology.'];
@@ -23,6 +23,13 @@ function App() {
 	const [showSite, setShowSite] = useState(false);
 	const closeSite = () => setShowSite(false);
 
+	// Games hooks
+	const [showGames, setShowGames] = useState(false);
+	const closeGames = () => setShowGames(false);
+
+	// PWGen hooks
+	const [showPWGen, setShowPWGen] = useState(false);
+	const closePWGen = () => setShowPWGen(false);
 	return (
 
 		<div className="app">
@@ -71,7 +78,7 @@ function App() {
 								I enjoy creating apps that can help people, make every day life easier, and make it fun.<br></br>
 								I'm always looking forward to improve my applications.<br></br><br></br>
 
-								If you have any questions or comments regarding my apps, please feel free to contact me at <a href="https://mailto:arpanneupane19@gmail.com" target="__blank"><br></br> arpanneupane19@gmail.com</a> or by clicking the mail icon on the sidebar.<br></br><br></br>
+								If you have any questions or comments regarding my apps, please feel free to contact me at <a href="mailto:arpanneupane19@gmail.com" target="__blank"><br></br> arpanneupane19@gmail.com</a> or by clicking the mail icon on the sidebar.<br></br><br></br>
 						</p><br></br><br></br>
 
 
@@ -83,7 +90,7 @@ function App() {
 						<h3>Languages</h3>
 						<p>Python (Proficient) </p>
 						<p>HTML/CSS (Proficient) </p>
-						<p>JavaScript (Learning) </p>
+						<p>JavaScript (Decent) </p>
 						<p>Dart (Learning) </p><br></br>
 
 
@@ -92,7 +99,7 @@ function App() {
 						<p>PyGame (Proficient) </p>
 						<p>Tkinter (Proficient) </p>
 						<p>Bootstrap (Proficient) </p>
-						<p>React.js (Learning)</p>
+						<p>React.js (Decent)</p>
 						<p>Flutter (Learning)</p>
 
 				</section>
@@ -131,14 +138,14 @@ function App() {
 
 
 								<div className='app'>
-										<img src='/img/games.jpg' alt='Games'/>
+										<img onClick={() => setShowGames(true)} src='/img/games.jpg' alt='Games'/>
 										<h4>Games</h4>
 										<p>Python/PyGame/Turtle</p><br></br>
 								</div> 
 
 
 								<div className='app'>
-										<img src='/img/passwordgen.jpg' alt='Password Generator'/>
+										<img onClick={() => setShowPWGen(true)} src='/img/passwordgen.jpg' alt='Password Generator'/>
 										<h4>Password Generator</h4>
 										<p>JavaScript/HTML/CSS</p><br></br>
 								</div> 
@@ -168,12 +175,20 @@ function App() {
 							showSite={showSite}
 							closeSite={closeSite}
 						/>
-
+						<GamesModal
+							showGames={showGames}
+							closeGames={closeGames}
+						/>
+						<PWGenModal
+							showPWGen={showPWGen}
+							closePWGen={closePWGen}
+						/>
+					<p className='ending'>This took time to make lol.</p>
 				</section>
 
+	
 
 		</div>
-
 
 		
 	);
