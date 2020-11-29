@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.js';
 import Contact from './components/Contact.js';
 import Typewriter from 'typewriter-effect';
 import { FaAngleDown } from 'react-icons/fa'; 
-import {BloggyModal, TodosModal, WebsiteModal, GamesModal, PWGenModal} from './components/Modal.js';
+import {BloggyModal, TodosModal, WebsiteModal, GamesModal, PWGenModal, AirQMModal} from './components/Modal.js';
 
 
 const strings = ['code.', 'creating.', 'learning.', 'technology.'];
@@ -30,9 +30,16 @@ function App() {
 	// PWGen hooks
 	const [showPWGen, setShowPWGen] = useState(false);
 	const closePWGen = () => setShowPWGen(false);
+
+	// AirQM hooks
+	const [showAirQM, setShowAirQM] = useState(false);
+	const closeAirQM = () => setShowAirQM(false);
+
+
 	return (
 
 		<div className="app">
+				{showBloggy || showTodos || showSite || showGames || showPWGen || showAirQM ? <div onClick={() => setShowBloggy(false) || setShowTodos(false) || setShowSite(false) || setShowGames(false) || setShowPWGen(false) || setShowAirQM(false)}className='backdrop'></div>: null}
 				
 				<Navbar/>
 				<Contact/>
@@ -152,7 +159,7 @@ function App() {
 
 
 								<div className='app'>
-										<img src='/img/airqm.jpg' alt='Air Quality Monitor'/>
+										<img onClick={() => setShowAirQM(true)} src='/img/airqm.jpg' alt='Air Quality Monitor'/>
 										<h4>Air Quality Monitor</h4>
 										<p>Python/Tkinter</p><br></br>
 								</div> 
@@ -182,6 +189,10 @@ function App() {
 						<PWGenModal
 							showPWGen={showPWGen}
 							closePWGen={closePWGen}
+						/>
+						<AirQMModal
+							showAirQM={showAirQM}
+							closeAirQM={closeAirQM}
 						/>
 					<p className='ending'>This took time to make lol.</p>
 				</section>
