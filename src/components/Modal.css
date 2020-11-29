@@ -7,11 +7,11 @@
     margin-left: 10px;
 	background-color: white;
     z-index: 500;
-    top: 50%;
-    left: 34%;
+    top: 40%;
+    left: 33%;
     transition: .3s ease-out;
     position: fixed;
-    
+
 }
 
 
@@ -47,4 +47,79 @@
 .modal-links {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-container {
+        width: 400px;
+        padding: 15px;
+        border: 1px solid lightgray;
+        box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-left: 10px;
+        background-color: white;
+        z-index: 500;
+        top: 50%;
+        left: 20%;
+        transition: .3s ease-out;
+        position: fixed;
+    
+    }
+    
+  
+    
+}
+
+@media screen and (max-width: 411px) {
+    .modal-container {
+        width: 300px;
+        padding: 15px;
+        border: 1px solid lightgray;
+        box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-left: 10px;
+        background-color: white;
+        z-index: 500;
+        top: 50%;
+        left: 20%;
+        transition: .3s ease-out;
+        position: fixed;
+    
+    }
+
+    .modal-header > span {
+        margin-left: 285px;
+        position: fixed;
+    
+    }
+    
+  
+    
+}
+
+@media screen and (max-width: 500px) {
+    .modal-container {
+        width: 300px;
+        padding: 15px;
+        border: 1px solid lightgray;
+        box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-left: 10px;
+        background-color: white;
+        z-index: 500;
+        top: 50%;
+        left: 3%;
+        transition: .3s ease-out;
+        position: fixed;
+    
+    }
+
+    .modal-header > span {
+        margin-left: 285px;
+        position: fixed;
+    
+    }
+    
+  
+    
 }

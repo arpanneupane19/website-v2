@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.js';
 import Contact from './components/Contact.js';
 import Typewriter from 'typewriter-effect';
 import { FaAngleDown } from 'react-icons/fa'; 
-import {BloggyModal, TodosModal} from './components/Modal.js';
+import {BloggyModal, TodosModal, WebsiteModal} from './components/Modal.js';
 
 
 const strings = ['code.', 'creating.', 'learning.', 'technology.'];
@@ -19,6 +19,9 @@ function App() {
 	const [showTodos, setShowTodos] = useState(false);
 	const closeTodos = () => setShowTodos(false);
 
+	// Site hooks
+	const [showSite, setShowSite] = useState(false);
+	const closeSite = () => setShowSite(false);
 
 	return (
 
@@ -96,6 +99,7 @@ function App() {
 
 
 				<section id='projects'>
+						
 						<h1 className='projects-header'>Projects</h1>
 
 						<div className='all-projects'>
@@ -118,7 +122,7 @@ function App() {
 
 
 								<div className='app'>
-										<img src='/img/website.jpg' alt='This Website'/>
+										<img onClick={() => setShowSite(true)} src='/img/website.jpg' alt='This Website'/>
 										<h4>This Website</h4>
 										<p>React.js</p><br></br>
 								</div> 
@@ -160,6 +164,11 @@ function App() {
 							showTodos={showTodos}
 							closeTodos={closeTodos}
 						/>
+						<WebsiteModal
+							showSite={showSite}
+							closeSite={closeSite}
+						/>
+
 				</section>
 
 

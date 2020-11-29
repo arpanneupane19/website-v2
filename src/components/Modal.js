@@ -21,8 +21,8 @@ export function BloggyModal ({showBloggy, closeBloggy}) {
 				<p>
 				This is a social networking app created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a> web framework in <a href="https://python.org" target="__blank">Python</a>.
 				Users can create blog posts, update the posts, and delete them. Users have the ability to create a bio about themselves for others to click on as well as setting a profile picture. Users are able to like & comment on other
-				users posts.
-				This web application uses Python as the backend and HTML, CSS, and Bootstrap as the frontend. It is using a <a href="https://www.sqlite.org/index.html" target="__blank">SQLite</a> database. <br></br>
+				users posts.<br></br>
+				This web application uses Python as the backend and HTML, CSS, and Bootstrap as the frontend. It is using a <a href="https://www.sqlite.org/index.html" target="__blank">SQLite</a> database. <br></br><br></br>
 				The GitHub repository is <a href="https://github.com/arpanneupane19/bloggy-webapp" target="__blank">here! </a>
 				The live demo is <a href="https://bloggyapp.pythonanywhere.com" target="__blank">here!</a>
 				</p>
@@ -55,8 +55,8 @@ export function TodosModal ({showTodos, closeTodos}) {
 				This is a Todo-List-App created using the <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a> web framework in <a href="https://python.org">Python</a>.
 				Users can sign up, create todos, and mark them complete once they have been finished.
 				This app is able to perform CRUD operations.
-				This web application uses Python as the backend and HTML, CSS, and Bootstrap as the frontend. It is using a <a href="https://www.sqlite.org/index.html">SQLite</a> database.
-				The GitHub repository is <a href="https://github.com/arpanneupane19/bloggy-webapp." target="__blank">here!</a><br></br>
+				This web application uses Python as the backend and HTML, CSS, and Bootstrap as the frontend. It is using a <a href="https://www.sqlite.org/index.html">SQLite</a> database.<br></br><br></br>
+				The GitHub repository is <a href="https://github.com/arpanneupane19/bloggy-webapp." target="__blank">here!</a>
 				The live demo is <a href="https://todosapp.pythonanywhere.com" target="__blank">here!</a>
 
 				</p>
@@ -68,5 +68,30 @@ export function TodosModal ({showTodos, closeTodos}) {
 
 
 export function WebsiteModal ({showSite, closeSite}) {
-	
+	return (
+		<div className='modal-container'
+			style={{
+				transform: showSite ? 'translateY(0vh)' : 'translateY(-100vh)',
+				visibility: showSite ? 'visible' : 'hidden',
+				opacity: showSite ? 1: 0
+				
+			}}
+		>
+			<div className='modal-header'>
+				<h4>Website</h4>
+				<span onClick={closeSite} className='close-modal-btn'>x</span>
+			</div>
+			<hr></hr>
+			<div class='modal-content'>
+				<p>
+					This is the second version of my portfolio site. I built it using <a href="https://reactjs.org">ReactJS</a>. You can view the code <a href="https://github.com/arpanneupane19/personal-websitev2" target="__blank">here!</a><br>
+					</br><br></br>
+					<a href=''>Feel free to leave any feedback!</a>
+
+				</p>
+			</div>
+
+		</div>
+	)
+
 }
