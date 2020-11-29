@@ -69,6 +69,9 @@ export function TodosModal ({showTodos, closeTodos}) {
 
 export function WebsiteModal ({showSite, closeSite}) {
 	return (
+
+
+
 		<div className='modal-container'
 			style={{
 				transform: showSite ? 'translateY(0vh)' : 'translateY(-100vh)',
@@ -86,12 +89,15 @@ export function WebsiteModal ({showSite, closeSite}) {
 				<p>
 					This is the second version of my portfolio site. I built it using <a href="https://reactjs.org">ReactJS</a>. You can view the code <a href="https://github.com/arpanneupane19/personal-websitev2" target="__blank">here!</a><br>
 					</br><br></br>
-					<a href=''>Feel free to leave any feedback!</a>
+					<a href='mailto:arpanneupane19@gmail.com' target='__blank'>Feel free to leave feedback!</a>
+					
+
 
 				</p>
 			</div>
 
 		</div>
+
 	)
 
 }
