@@ -1,6 +1,6 @@
 import React from 'react'
 import './Email.css';
-import Navbar from './Navbar.js';
+
 
 function Email() {
 	return (
@@ -8,11 +8,19 @@ function Email() {
 		<div className='header'>
 			<h2>Email me!</h2>
 		</div>
-
 		<div className='form'>
 			<form method='POST'>
-				<input type='text'></input>
+				<input type='text' placeholder='First Name'></input>
+				<input type='text' placeholder='Last Name'></input>
+				<div className='email'>
+					<input type='text' placeholder='Your Email Address'></input>
+					<textarea placeholder='Email Body'></textarea>
+				</div>
+				<div className='submit'>
+					<input type='submit' value='Send Email'></input>
+				</div>
 			</form>
+
 		</div>
 	</div>
 

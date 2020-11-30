@@ -62,7 +62,7 @@ function Main() {
 								/>
 						</div>
 
-						<div class='arrow'>
+						<div className='arrow'>
 								<h3><a href='#about'><FaAngleDown color='black'/></a></h3>
 						</div>
 

@@ -18,7 +18,7 @@ export function BloggyModal ({showBloggy, closeBloggy}) {
 				<span onClick={closeBloggy} className='close-modal-btn'>x</span>
 			</div>
 			<br></br>
-			<div class='modal-content'>
+			<div className='modal-content'>
 				<p>
 				This is a social networking app created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a> web framework in <a href="https://python.org" target="__blank">Python</a>.
 				Users can create blog posts, update the posts, and delete them. Users have the ability to create a bio about themselves for others to click on as well as setting a profile picture. Users are able to like & comment on other
@@ -51,7 +51,7 @@ export function TodosModal ({showTodos, closeTodos}) {
 				<span onClick={closeTodos} className='close-modal-btn'>x</span>
 			</div>
 			<br></br>
-			<div class='modal-content'>
+			<div className='modal-content'>
 				<p>
 				This is a Todo-List-App created using the <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a> web framework in <a href="https://python.org">Python</a>.
 				Users can sign up, create todos, and mark them complete once they have been finished.
@@ -86,7 +86,7 @@ export function WebsiteModal ({showSite, closeSite}) {
 				<span onClick={closeSite} className='close-modal-btn'>x</span>
 			</div>
 			<br></br>
-			<div class='modal-content'>
+			<div className='modal-content'>
 				<p>
 					This is the second version of my portfolio site. I built it using <a href="https://reactjs.org">ReactJS</a>. You can view the code <a href="https://github.com/arpanneupane19/personal-websitev2" target="__blank">here!</a><br>
 					</br><br></br>
@@ -119,7 +119,7 @@ export function GamesModal ({showGames, closeGames}) {
 				<span onClick={closeGames} className='close-modal-btn'>x</span>
 			</div>
 			<br></br>
-			<div class='modal-content'>
+			<div className='modal-content'>
 				<p>
 					These are my games! I have created 7 games so far and they are all available on both
 					Windows and macOS. I originally started learning Python by creating games.
@@ -150,7 +150,7 @@ export function PWGenModal ({showPWGen, closePWGen}) {
 				<span onClick={closePWGen} className='close-modal-btn'>x</span>
 			</div>
 			<br></br>
-			<div class='modal-content'>
+			<div className='modal-content'>
 				<p>
 					
 					This is a Password Generator created using <a href="https://www.javascript.com/">JavaScript</a>.
@@ -181,7 +181,7 @@ export function AirQMModal ({showAirQM, closeAirQM}) {
 				<span onClick={closeAirQM} className='close-modal-btn'>x</span>
 			</div>
 			<br></br>
-			<div class='modal-content'>
+			<div className='modal-content'>
 				<p>
 					This is a desktop app created in Python's Tkinter library.
 					You can type in a zip code and the app uses an API to get the air quality in that zip code.

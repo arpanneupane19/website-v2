@@ -7,7 +7,7 @@ import { MdEmail } from 'react-icons/md';
 function Contact() {
   return (
 	<div className='sidebar-icons'>
-		<ul class='icons'>
+		<ul className='icons'>
 			<li>
 				<a href='https://github.com/arpanneupane19' target="__blank"><FaGithub color='black'/></a><br></br>
 				<a href='https://instagram.com/__arpanneupane__' target="__blank"><SiInstagram color='black'/></a><br></br>
