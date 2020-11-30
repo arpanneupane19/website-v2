@@ -1,5 +1,6 @@
 import React from 'react'
 import './Modal.css'
+import {Link} from 'react-router-dom';
 
 export function BloggyModal ({showBloggy, closeBloggy}) {
 	return (
@@ -89,7 +90,8 @@ export function WebsiteModal ({showSite, closeSite}) {
 				<p>
 					This is the second version of my portfolio site. I built it using <a href="https://reactjs.org">ReactJS</a>. You can view the code <a href="https://github.com/arpanneupane19/personal-websitev2" target="__blank">here!</a><br>
 					</br><br></br>
-					<a href='mailto:arpanneupane19@gmail.com' target='__blank'>Feel free to leave feedback!</a>
+					<Link to='/contact'>Feel free to leave feedback!</Link>
+
 					
 
 
