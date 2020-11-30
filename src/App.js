@@ -15,12 +15,20 @@ function App() {
 		<Router>
 			<Switch>
 				<Route exact path='/'>
-					<Navbar/>
+					<Navbar
+					home='/'
+					about='/#about'
+					projects='#projects'
+					/>
 					<Contact/>
 					<Main/>
 				</Route>
 				<Route exact path='/contact'>
-					<Navbar/><br></br>
+					<Navbar
+					home='/'
+					about='/#about'
+					projects='/#projects'
+					/><br></br>
 					<Email/>
 				</Route>
 			</Switch>
