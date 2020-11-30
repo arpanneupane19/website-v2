@@ -16,7 +16,7 @@ export function BloggyModal ({showBloggy, closeBloggy}) {
 				<h4>Bloggy</h4>
 				<span onClick={closeBloggy} className='close-modal-btn'>x</span>
 			</div>
-			<hr></hr>
+			<br></br>
 			<div class='modal-content'>
 				<p>
 				This is a social networking app created using the <a href="https://flask.palletsprojects.com/en/1.1.x/" target="__blank">Flask</a> web framework in <a href="https://python.org" target="__blank">Python</a>.
@@ -49,7 +49,7 @@ export function TodosModal ({showTodos, closeTodos}) {
 				<h4>Todos</h4>
 				<span onClick={closeTodos} className='close-modal-btn'>x</span>
 			</div>
-			<hr></hr>
+			<br></br>
 			<div class='modal-content'>
 				<p>
 				This is a Todo-List-App created using the <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a> web framework in <a href="https://python.org">Python</a>.
@@ -84,7 +84,7 @@ export function WebsiteModal ({showSite, closeSite}) {
 				<h4>Website</h4>
 				<span onClick={closeSite} className='close-modal-btn'>x</span>
 			</div>
-			<hr></hr>
+			<br></br>
 			<div class='modal-content'>
 				<p>
 					This is the second version of my portfolio site. I built it using <a href="https://reactjs.org">ReactJS</a>. You can view the code <a href="https://github.com/arpanneupane19/personal-websitev2" target="__blank">here!</a><br>
@@ -116,7 +116,7 @@ export function GamesModal ({showGames, closeGames}) {
 				<h4>Games</h4>
 				<span onClick={closeGames} className='close-modal-btn'>x</span>
 			</div>
-			<hr></hr>
+			<br></br>
 			<div class='modal-content'>
 				<p>
 					These are my games! I have created 7 games so far and they are all available on both
@@ -147,7 +147,7 @@ export function PWGenModal ({showPWGen, closePWGen}) {
 				<h4>Password Generator</h4>
 				<span onClick={closePWGen} className='close-modal-btn'>x</span>
 			</div>
-			<hr></hr>
+			<br></br>
 			<div class='modal-content'>
 				<p>
 					
@@ -178,7 +178,7 @@ export function AirQMModal ({showAirQM, closeAirQM}) {
 				<h4>Air Quality Monitor</h4>
 				<span onClick={closeAirQM} className='close-modal-btn'>x</span>
 			</div>
-			<hr></hr>
+			<br></br>
 			<div class='modal-content'>
 				<p>
 					This is a desktop app created in Python's Tkinter library.
