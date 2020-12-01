@@ -5,7 +5,9 @@
 
 .header {
 	margin-top: 100px;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 30px;
 }
 
@@ -26,17 +28,29 @@
 	margin: 10px;
 }
 
-
-
-.submit > input{
-	height: 35px;
-	width: 95%;
-	border: 1px solid lightgray;
-	padding: 4px;
-	border-radius: 3px;
-	margin: 10px;
+input {
+	font-size: 13px;
 }
 
+textarea {
+	font-size: 13px;
+}
+
+.submit {
+	margin-top: 10px;
+}
+
+
+.submit > a {
+	height: 35px;
+	border: 1px solid lightgray;
+	padding: 4px;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px;
+	background: whitesmoke;
+	color: black;
+}
 
 
 .email {
@@ -65,7 +79,7 @@
 }
 
 input:focus {
-	outline: none;
+	outline: none
 }
 
 textarea:focus {
